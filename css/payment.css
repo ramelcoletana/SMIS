@@ -1,0 +1,153 @@
+/*-------------------------------------------------PAYMENT WRAPPER--------------------------------------------------*/
+/*-------------------------------------------------LEMUEL NUEVAREZ--------------------------------------------------*/
+#div_payment_wrapper{
+    border: 1px solid silver;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #D8E9ED;
+    font-family: arial,monospace,serif,sans-serif;
+    box-shadow: 6px 4px 5px 5px lightgray   ;
+}
+
+
+
+/*-------------------------------------EDITED BY: REGIE CADAYONG---------------------------------------------------*/
+#div_search input[type="text"]{
+    margin-top: 15px;
+    margin-left: 150px;box-shadow: 6px 4px 5px 5px #C8C8C8  ;
+    text-align: center;
+    font: normal 15px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+}
+ button #btn_p_search_stud{
+      margin-top: 5px;
+      margin-left: 5px;
+ }
+
+/*----------------------------------------------------PAYMENT DATA---------------------------------------------------*/
+
+/*-------------------------------------EDITED BY: REGIE CADAYONG-----------------------------------------------------*/
+h2{
+    text-align: center;
+    background: lightskyblue;
+    margin-top: -4px;
+    color: white;
+    border-radius-top-left: 20%;
+    text-shadow: 5px 5px 5px black;
+}
+#div_for_payment_data{
+   /*border: 1px solid silver;*/
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    box-shadow: 6px 4px 5px 5px #C8C8C8  ;
+    border-radius: 5px;
+    background: 	#303030   ;
+   
+}
+#div_for_payment_data label{
+    line-height: 45px;
+    float: left;
+    font-family: arial,monospace,serif,sans-serif;
+    /*font: normal 15px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;*/
+    margin-top: -7px;
+    color:   	#505050 ;
+    padding-left: 20px;
+}
+#div_for_payment_data input[type='text']{
+    float: right;
+    background-color: #fff;
+    /*border: 0 none;*/
+    margin-right: 17px;
+    font: normal 15px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    
+}
+
+#date_now{
+    font-family: arial,monospace,serif,sans-serif;
+    font-size: 15px;
+
+}
+#div_for_show_records{
+    /*border: 1px solid green;*/
+    height: 160px;
+    margin-top: 15px;
+    background-color:	#303030;
+}     
+
+#date{
+     margin-left: 250px;
+     font: normal 15px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+     margin-top: 10px;
+}
+
+
+
+/*-------------------------------------------END--------------------------------------------------------------------*/
+
+/*-------------------------------------------------ASSESSMENT DATA---------------------------------------------------*/
+#div_assessment_data{
+    border: 1px solid silver;
+    margin: 0 auto;
+    width: 700px;
+    margin-bottom:10px;
+}
+#tbl_for_assessment{border: 1px solid silver; margin: 0 auto; width: 100%;}
+#tbl_for_assessment th{border: 1px solid silver; height: 45px;}
+#tbl_for_assessment th #assessment_no, #tbl_for_assessment th #mode_of_payment{ color: white; font-size: 13px;}
+#tbl_for_assessment #noAss{text-align: center;}
+/*#div_cash_tendered{border: 1px solid silver; width: 220px; margin-left: 300px; margin-top: -110px;} */
+
+/*--------------------------------------------------ALERT MESSAGES---------------------------------------------------*/
+#div_alert_msg_p{
+    background-color: white;
+    border: 1px solid silver;
+   /* margin: 0 0px 20px 0; */
+   /* float: left;*/
+    text-align: center;
+    overflow: hidden;
+}
+#alert_msg_p:hover{
+    color:green ;
+    
+}
+#alert_msg_p{
+    font-size: 15px;
+    color:#00ff00;
+    font-weight: bold;
+    
+}
+
+ /*-------------  Ruel's eddtited    date: 13/04/17   ------------ */
+
+#assPay{ font-family:Arial sans-serif; font-size:20px; color:red; }
+#desc{background-color:	lightskyblue; color:#303030; padding:1px;}
+#des{font-size:13px;}
+#assess{background-color: lightskyblue; color:#303030;}
+#assbal{background-color: lightskyblue; color:#303030;}
+#payhere{background-color: lightskyblue; color:#303030;}
+#advance{background-color: lightskyblue; color:#303030;}
+#div_bottom_cash_payment{
+	background-color:#303030 ;
+}
+#div_bottom_cash_payment input[type='text']{
+   /* float: right;*/
+    margin-right: 50px;
+	width: 200px;
+}
+.label_1{margin-left: 60px; text-align: center; }
+#payment{margin-left: 160px; }
+/*#label_1{margin-left: 40px;}*/
+#div_button_cancel_done{margin-left:300px;margin-top:10px;}
+#btn_ass_payment_done:hover{color:yellow;}
+#btn_ass_payment_cancel:hover{color:red;}
+/*#div_cash_tendered{width: 220px; margin-left:420px;margin-top:-110px;}*/
+/*#amount_ten{margin-left:150px;width:100px;}*/
+/*#change{margin-left:150px;width:100px;}*/
+#change2{margin-left:70px;}
+/*#t_amount_ass{width:100px;margin-left:250px;}*/
+/*#t_current_pymnt{width:100px;margin-left:250px;}*/
+/*#tcp{margin-left:20px;}*/
+
+/*------------------------ End  -------------------------------------- */
