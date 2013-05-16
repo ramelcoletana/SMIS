@@ -17,6 +17,8 @@
     <file path="/payment.js" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368603504986" ignored="false" />
     <file path="/logout.php" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368609067297" ignored="false" />
     <file path="/scripts.js" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368671720058" ignored="false" />
+    <file path="/assessment1.php" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368677194009" ignored="false" />
+    <file path="/assessment1.css" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368674619612" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +38,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="46" selection-start="3671" selection-end="3671" vertical-scroll-proportion="0.6930693">
-              <folding />
+            <state line="16" column="74" selection-start="577" selection-end="577" vertical-scroll-proportion="1.25">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,15 +88,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file_upload.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/file_upload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="assessmnt.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/assessmnt.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,28 +106,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assessment.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="assessment.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/assessment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="2" selection-start="8" selection-end="8" vertical-scroll-proportion="3.125">
+            <state line="31" column="49" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.32178217">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="payment.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/payment.js">
+      <file leaf-file-name="assessment1.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/assessment1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="19" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="41" column="0" selection-start="1819" selection-end="1819" vertical-scroll-proportion="-18.916666">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="payment.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/payment.php">
+      <file leaf-file-name="assessment1.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/assessment1.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assessment.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/assessment.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="1" selection-start="1700" selection-end="2326" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,8 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/nav_tool_tip.js" />
-        <option value="$PROJECT_DIR$/pages/home.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/process/file_upload.php" />
         <option value="$PROJECT_DIR$/scripts/assessmnt.js" />
@@ -163,7 +168,9 @@
         <option value="$PROJECT_DIR$/process/logout.php" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/assessment1.css" />
         <option value="$PROJECT_DIR$/pages/main.php" />
+        <option value="$PROJECT_DIR$/pages/assessment1.php" />
       </list>
     </option>
   </component>
@@ -227,7 +234,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,23 +380,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="23" selection-end="23" vertical-scroll-proportion="-1.875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/nav_tool_tip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="258" selection-end="258" vertical-scroll-proportion="0.2020958">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/process/setProfilePic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="139" selection-end="139" vertical-scroll-proportion="0.09693053" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/process/file_upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="24" selection-start="115" selection-end="115" vertical-scroll-proportion="-1.875">
@@ -421,13 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/assessment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="8" selection-end="8" vertical-scroll-proportion="3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="35" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
@@ -454,9 +465,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/assessment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="1" selection-start="1700" selection-end="2326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/assessment1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="46" selection-start="3671" selection-end="3671" vertical-scroll-proportion="0.6930693">
+        <state line="16" column="74" selection-start="577" selection-end="577" vertical-scroll-proportion="1.25">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/assessment1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1819" selection-end="1819" vertical-scroll-proportion="-18.916666">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/assessment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="49" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.32178217">
           <folding />
         </state>
       </provider>

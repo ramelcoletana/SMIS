@@ -14,8 +14,8 @@
     <link type="text/css" rel="stylesheet" href="../css/bootstrap.css" media="screen">
     <link href="../css1/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
     <link rel='stylesheet' type='text/css' href='../themes/base/jquery.ui.all.css'/>
-    <link type="text/css" rel="stylesheet" href="../css/payment.css"/>
-    <link type="text/css" rel="stylesheet" href="../css/assessment.css"/>
+    <!--link type="text/css" rel="stylesheet" href="../css/payment.css"/-->
+    <link type="text/css" rel="stylesheet" href="../css/assessment1.css"/>
 
     <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="../js-ui/jquery-ui-darkhive.js"></script>
@@ -92,7 +92,7 @@
     ?>
            <input type="hidden" class="current_page" value="new-ass"/>
     <?php
-         include "assessment.php";
+         include "assessment1.php";
             }else{
     ?>
            <input type="hidden" class="current_page" value="pay"/>

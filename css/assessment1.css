@@ -1,0 +1,35 @@
+#div-for-pic{
+    height: 120px;
+    width: 120px;
+    border: 0 none;
+    padding-right: 2px;
+    margin-left: 100px;
+}
+#div-for-pic:hover #label_change_pic{
+    display: block;
+}
+.div-image{
+    height: 80px;
+    width: 85%;
+    border: 5px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.div-image img{
+    height: 80px;
+    width: 99%;
+}
+#div-for-pic #label_change_pic{
+    font-size: 12px;
+    color: #888888;
+    font-family: arial,monospace,serif,sans-serif;
+    text-align: center;
+    display: none;
+}
+#div-for-pic #label_change_pic:hover{
+    text-decoration: none;
+    cursor: pointer;
+
+}
