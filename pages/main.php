@@ -18,7 +18,7 @@
     <link type="text/css" rel="stylesheet" href="../css/assessment.css"/>
 
     <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="../js/jquery-ui-darkhive.js"></script>
+    <script type="text/javascript" src="../js-ui/jquery-ui-darkhive.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
 
     <script src="../js/bootstrap-tab.js" type="text/javascript"></script>
@@ -31,9 +31,9 @@
     <script src="../js/file_upload.js" type="text/javascript"></script>
     <script src="../js/assessmnt.js" type="text/javascript"></script>
 
-
-    <link rel="icon" href='../images/deped_logo_old.jpg'/>
+    <link rel="icon" href='../images/sms.ico'/>
     <title>S M I S</title>
+
 </head>
 <body>
 <nav>
@@ -77,7 +77,8 @@
 <div class="thumbnail">
     <?php
         if(isset($_SESSION['success_msg'])){
-            echo "<div class='alert' id='alert_success' style='text-align: center;height: 20px;'>".$_SESSION['success_msg']."</div>";
+            echo "<div class='alert alert-info' id='alert_success' style='text-align: center;height: 20px;'>".$_SESSION['success_msg']."</div>";
+            $_SESSION['success_msg'] = "";
         }
     ?>
     <?php

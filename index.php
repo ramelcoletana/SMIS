@@ -34,8 +34,8 @@
     <script type="text/javascript" src="js/jquery-ui-darkhive.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <title>S M I S | LOGIN PAGE</title>
-    <link rel="icon" href='images/deped_logo_old.jpg'/>
+    <title>Sign in - SMIS</title>
+    <link rel="icon" href='images/sms.ico'/>
     <style type="text/css">
         body {
             padding-top: 40px;
@@ -43,8 +43,8 @@
             background-color: #f5f5f5;
         }
         .form-signin {
-            max-width: 300px;
-            padding: 19px 29px 29px;
+            max-width: 400px;
+            /*padding: 19px 29px 29px;*/
             margin: 0 auto 20px;
             background-color: #fff;
             border: 1px solid #e5e5e5;
@@ -55,7 +55,46 @@
             -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
             box-shadow: 0 1px 2px rgba(0,0,0,.05);
         }
-        .form-signin .form-signin-heading,
+        .auth-form-header{
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-color: #6C8393;
+            background-image: linear-gradient(#7F95A5, #6C8393);
+            background-repeat: repeat-x;
+            border-color: #6E8290 #6E8290 #586873;
+            border-image: none;
+            border-radius: 4px 4px 0 0;
+            border-style: solid;
+            border-width: 1px;
+            color: #FFFFFF;
+            margin: 0;
+            padding-left: 20px;
+            position: relative;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+         }
+        .auth-form-body{
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            -moz-box-sizing: border-box;
+            background-color: #FFFFFF;
+            border-color: white #D8DEE2 #D8DEE2;
+            border-image: none;
+            border-radius: 0 0 4px 4px;
+            border-right: 1px solid #D8DEE2;
+            border-style: solid;
+            border-width: 1px;
+            font-size: 14px;
+            padding: 15px 25px 20px;
+        }
+        .auth-form-body label{
+            font-weight: bold;
+            font-size: 14px;
+         }
+        .form-signin,
         .form-signin .checkbox {
             margin-bottom: 10px;
         }
@@ -64,7 +103,7 @@
             font-size: 16px;
             height: auto;
             margin-bottom: 15px;
-            padding: 7px 9px;
+            padding: 5px 9px;
     </style>
     <script>
         $(function(){
@@ -74,27 +113,39 @@
     </script>
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-inner1" style="text-align: center;">
+        <h2>School Management and Information System</h2>
+    </div>
+</div>
+<br>
+<br>
+<br>
 
 <div class="container"> <!-- sign in form -->
+    <?php
+    if(isset($err)){
+        echo "<div class='alert alert-error container' style='margin-top: 15px;'><i class='icon-exclamation-sign'></i>&nbsp;$err
+            <button type='button' class='close' data-dismiss='alert'>&times;</button>
+        </div>";
+    }else{
+        echo "";
+    }
+    ?>
      <form class="form-signin" method="POST" action="">
-         <h2 class="form-signin-heading">Please sign in</h2>
-             <?php
-             if(isset($err)){
-                 echo "<div class='alert alert-error' style='margin-top: 15px;'><i class='icon-exclamation-sign'></i>&nbsp;$err</div>";
-             }else{
-                 echo "";
-             }
-         ?>
+         <div class="auth-form-header"><h4>Sign in</h4></div>
+         <div class="auth-form-body">
+             <label for="signin_username">Username</label>
              <input type="text" name="signin_username" id="signin_username" class="input-block-level" placeholder="Username" required >
+             <label for="signin_password">Password</label>
              <input type="password" name="signin_password" id="signin_password" class="input-block-level" placeholder="Password" required >
-         <label class="checkbox">
+             <label class="checkbox">
              <input type="checkbox" value="remember-me">
              Remember me
-         </label>
-         <br>
-         <button class="btn btn-success" type="submit"><i class="icon-signin"></i>&nbsp;Sign in</button>
-
-
+            </label>
+            <button class="btn btn-success" type="submit"><i class="icon-signin"></i>&nbsp;Sign in</button>
+             <div class="pull-right"><a href="#" class="btn">Forgot password?</a></div>
+          </div>
      </form>
 </div>
 <!-- END sign in form -->
