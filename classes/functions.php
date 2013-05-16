@@ -12,7 +12,14 @@ class sqlfunction extends DB_Connect{
             return $row[2];
         }
     }
-    
+
+    /*SHOW USER PIC*/
+    function show_user_pic($login_user,$login_password){
+        $sql = "SELECT fldProfile_Pic FROM tbluseraccount WHERE flduserID = '$login_user' AND fldpassword = '$login_password' ";
+        $res = mysql_query($sql, $this->openCon());
+        $pic = mysql_fetch_array($res);
+        return $pic[0];
+    }
 
     //===========================================================================================================//
     /*DELETE CURRENT MS ASSESSMENT*/

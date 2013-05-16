@@ -307,6 +307,30 @@ $(document).ready(function(){
                         deleteCurrentFullPayment();
                         deleteTemporySubjects();
                         showFullPaymentFormTF();
+
+                        clearFPTotalAmount();
+                        clearFPCPayment();
+                        clearMSTotalAmount();
+                        clearMSCPayment();
+                        $('#searchStudId').val("");
+                        $('#studentId').html("");
+                        $('#studentName').html("");
+                        $('#age').val("");
+                        $('#syEntered').val("");
+                        $('#genAverage').val("");
+                        $('#recentBal').val("");
+                        $('input[name=radioPaymnt]').attr('disabled','disabled');
+                        $('#btn-sub-back').removeAttr('disabled');
+                        $('#btn-sub-next').removeAttr('disabled');
+                        $('#cashAmount').removeAttr('readonly');
+                        $('#cashAmount').val("");
+                        $('#cashAmountF').removeAttr('readonly');
+                        $('#cashAmountF').val("");
+
+                        $('input[name=radioPaymnt]').prop('checked', false);
+                        $('input[name=radioDepartment]').prop('checked', false);
+                        setProfilePic();
+
                         $('#btn-sub-back').removeAttr('disabled');
                         $('#btn-sub-next').removeAttr('disabled');
                         $(this).dialog("close");
@@ -331,6 +355,29 @@ $(document).ready(function(){
                         hideFullPaymentFormTF();
                         hideMSPaymentFormTF();
                         cancelMSAssessment();
+                        clearFPTotalAmount();
+                        clearFPCPayment();
+                        clearMSTotalAmount();
+                        clearMSCPayment();
+                        $('#searchStudId').val("");
+                        $('#studentId').html("");
+                        $('#studentName').html("");
+                        $('#age').val("");
+                        $('#syEntered').val("");
+                        $('#genAverage').val("");
+                        $('#recentBal').val("");
+                        $('input[name=radioPaymnt]').attr('disabled','disabled');
+                        $('#btn-sub-back').removeAttr('disabled');
+                        $('#btn-sub-next').removeAttr('disabled');
+                        $('#cashAmount').removeAttr('readonly');
+                        $('#cashAmount').val("");
+                        $('#cashAmountF').removeAttr('readonly');
+                        $('#cashAmountF').val("");
+
+                        $('input[name=radioPaymnt]').prop('checked', false);
+                        $('input[name=radioDepartment]').prop('checked', false);
+                        setProfilePic();
+
                         $(this).dialog("close");
                     },
                     No: function(){

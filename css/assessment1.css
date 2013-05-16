@@ -1,3 +1,5 @@
+#div-overlay-alert-msg { display: none; }
+#searchStudId { text-align: center; }
 #div-for-pic{
     height: 120px;
     width: 120px;
@@ -32,4 +34,284 @@
     text-decoration: none;
     cursor: pointer;
 
+}
+/*RIGHT ,DATE, ENROLLMENT NO, TRANSACTION NO*/
+.control-date{ margin-left: 40px; }
+
+/*BUTTON SUBJECT FEES*/
+.btn-sub-fees{ border: 1px solid #e5e5e5; margin-top: 25px; }
+#btn-sub-fees{ margin-left: 110px; }
+
+/* TABLE FEES SUBJECTS*/
+#div-sub-fee-wrapper{
+    border: 0 none;
+    width: 685px!important;
+    position: relative;
+    background: #fff;
+}
+#div-for-full{
+    border: 0 none;
+    width: 686px;
+    margin: 0 auto;
+    margin-left: 0px;
+    display: none;
+}
+#div-for-MS{
+    border: 0 none;
+    width: 686px;
+    margin: 0 auto;
+    margin-left: 0px;
+    display: none;
+}
+#div-for-subject{
+    border: 0 none;
+    width: 686px;
+    margin: 0 auto;
+    /*margin-right: 10px;;*/
+    display: none
+}
+#div-for-table-full-pymnt{
+    border: 0 none;
+}
+#div-for-table-MS-pymnt{
+    border: 0 none;
+}
+#div-for-table-subject{
+    border: 0 none;
+}
+#div-alert-msg-MS,#div-alert-msg-F{
+
+    font-family: arial,serif,sans-serif;
+    font-size: 13px;
+}
+#div-warning-msg-MS,#div-warning-msg-F{
+    display: none;
+    font-family: arial,serif,sans-serif;
+    font-size: 13px;
+}
+
+#div-bottom-full-pymnt{
+    border: 0 none;
+}
+#div-bottom-monthly-pymnt{
+    border: 0 none;
+}
+.table thead tr{
+    background-color: #6C8393;
+    background-image: linear-gradient(#7F95A5, #6C8393);
+    border-radius: 4px 4px 0 0;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+.table th,.table td{
+    text-align: center;
+    font-size: 12px;
+}
+#tbody-for-fees-MS td .currentPayment{
+    border: 0 none;
+    border-radius: 0px;
+    margin-top: 5px;
+}
+#totalAmountMS,#cPaymentMS,#totalAmountFull,#cPaymentFull{
+    border: 0 none;
+    border-bottom: 1px solid #505050;
+    border-radius: 0px;
+}
+
+/*BUTTON DONE,CANCEL,RESET ALL ASSESSMENT*/
+#div-btn-done-cancel{
+    margin-left: 440px;
+}
+#btn-done-assmnt,#btn-cancel-assmnt{
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/*------------------div-overlay-alert-msg------------------*/
+#div-overlay-alert-msg{
+    display: none;
+    font-family: arial,serif,sans-serif;
+}
+#div-alert-success{
+    display: none;
+    font-family: arial,serif,sans-serif;
+}
+/*------------------end div-overlay-alert-msg----------------*/
+
+/*--------------------Dialog-------------------------------*/
+#dialog-confirm{
+    display: none;
+}
+#dialog-cancel-ass{
+    display: none;
+}
+
+/*table zebra stripe*/
+.even{
+    background-color: #fff;
+}
+.even:hover{
+    background-color: rgba(0,255,255,.2);
+}
+.even td input[type=text]{
+    background-color: #fff;
+    border: 0 none;
+    border-bottom: 1px solid #000;
+    height: 20px;
+    font-family: monospace,arial,serif,sans-serif;
+    text-align: center;
+}
+.odd{
+    background-color: #e5e5e5;
+}
+.odd:hover{
+    background-color:  rgba(0,255,255,.2);
+}
+.odd td input[type=text]{
+    background-color: #e5e5e5;
+    border: 0 none;
+    border-bottom: 1px solid #000;
+    height: 20px;
+    font-family: monospace,arial,serif,sans-serif;
+    text-align: center;
+}
+
+/*DIALOG-CONFIRM*/
+#dialog-confirm-done-MS-assessment{
+    display: none;
+}
+#dialog-confirm-done-MS-assessment .labelData{
+    font-weight: bold;
+}
+#dialog-confirm-done-MS-assessment small{
+    color: blue;
+}
+
+/*UPLOADING PROFILE PIC*/
+.div-overlay-upload-wrapp{
+    display: none;
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.div-overlay-upload{
+    width:400px;
+    margin: 0 auto;
+    border: solid 1px #cbcbcb;
+    background-color: #FFF;
+    box-shadow: 0 0 15px #cbcbcb;
+    -moz-box-shadow: 0 0 15px #cbcbcb;
+    -webkit-box-shadow: 0 0 15px #cbcbcb;
+    -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+    padding:10px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:11px;
+    position: relative;
+    margin-top: 100px;
+}
+#close_upload{
+    width: 15px;
+    height: 15px;
+    border: 0 none;
+    float: right;
+    margin-top: -7px;
+    margin-right: -5px;
+    cursor: pointer;
+}
+.icon-remove:hover{
+    opacity: 0.5;
+}
+#photo_upload_status{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+    color:black;
+    line-height:25px;
+}
+.div-overlay-upload-cont{
+    /*margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;*/
+}
+#form_upload{
+    border: 1px solid #c0c0c0;
+    height: 200px;
+    width: 300px;
+}
+.browse_label{
+    padding: 10px;
+    padding-top: 18px;
+    float: left;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #000;
+    width: 100px;
+}
+.attach_file_wrapp{
+    padding: 10px;
+    float: left;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+.attach_file{
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arila, Helvitica, sans-serif;
+    text-align: center;
+    background: #f2f2f2 url('../images/addfile.png') no-repeat 12px 9px;
+    color: green;
+    border: 1px solid #ccc;
+    height: 30px;
+    cursor: pointer;
+    width: 106px;
+    -moz-border-radius: 5px;
+    webkit-border-radius: 5px;
+    float: left;
+}
+#photo_upload{
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity:0);
+    z-index: 9999;
+    width: 90px;
+    padding: 5px;
+    cursor: pointer;
+}
+.info { border: 1px solid #999;
+    padding:12px 20px 12px 20px;
+    font: bold 12px verdana;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    text-shadow: 2px 2px 2px #ccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:11px; line-height:
+    20px;font-weight:normal;
+    color: black;
+    background: #BDE5F8;
+}
+/*Uploaded image wrapper*/
+span.uploadeFileWrapper { margin:auto; text-align:left; }
+span.uploadeFileWrapper img {
+    display:inline;
+    border:6px solid #E2E2E2;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+span.uploadeFileWrapper a:hover img {
+    border:6px solid #CCC;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
 }

@@ -1,7 +1,10 @@
 <?php
     session_start();
+    include "../classes/functions.php";
     if(isset($_SESSION['login_user'])){
         //header("location: main.php");
+        $get_pic = new sqlfunction();
+        $pic = $get_pic->show_user_pic($_SESSION['login_user'],$_SESSION['login_password']);
     }else{
         header("location: ../index.php");
     }
@@ -17,7 +20,7 @@
     <!--link type="text/css" rel="stylesheet" href="../css/payment.css"/-->
     <link type="text/css" rel="stylesheet" href="../css/assessment1.css"/>
 
-    <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="../js-ui/jquery-ui-darkhive.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
 
@@ -54,13 +57,22 @@
 
             </ul>
             <ul class="nav pull-right">
-                <li><a href="../process/logout.php" data-placement="bottom" title="Logout" data-toggle="tooltip" id="logout"><i class="icon-signout"></i></a></li>
                 <li class='dropdown'>
-                    <a id="username" class="dropdown-toggle" href="#" data-target="#" data-toggle="dropdown" role="button"><img style="width: 20px; height: 20px; border-radius: 3px;" src="../images/avatar.gif"/>
+                    <a id="username" class="dropdown-toggle" href="#" data-target="#" data-toggle="dropdown" role="button"><img style="width: 20px; height: 20px; border-radius: 3px;" src=
+                    <?php
+                         if(isset($pic)){
+                             echo "../upload_pic/".$pic;
+                         }else{
+                             echo "../images/avatar.gif";
+                         }
+                    ?>
+                    />
                         <b class='caret'></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="icon-user"></i>Profile</a></li>
+                        <div class="divider"></div>
+                        <li><a href="../process/logout.php" id="logout"><i class="icon-signout"></i>Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -74,7 +86,7 @@
 <br>
 <br>
 <div class="container"><!-- main content -->
-<div class="thumbnail">
+<div class="thumbnail" style="border: 0 none;">
     <?php
         if(isset($_SESSION['success_msg'])){
             echo "<div class='alert alert-info' id='alert_success' style='text-align: center;height: 20px;'>".$_SESSION['success_msg']."</div>";

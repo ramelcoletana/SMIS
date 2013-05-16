@@ -8,8 +8,5 @@ $(document).ready(function(){
     $("#a_pay").tooltip("show");
     $("#a_pay").tooltip("hide");
     //
-    $("#logout").tooltip("show");
-    $("#logout").tooltip("hide");
-    //
 
 });
