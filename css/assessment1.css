@@ -60,24 +60,24 @@ div .line{
     background: #fff;
 }
 #div-for-full{
+    margin: 0 auto;
     border: 0 none;
     width: 686px;
-    margin: 0 auto;
-    margin-left: 0px;
+
     display: none;
 }
 #div-for-MS{
+    margin: 0 auto;
     border: 0 none;
     width: 686px;
-    margin: 0 auto;
-    margin-left: 0px;
+
     display: none;
 }
 #div-for-subject{
+    margin: 0 auto;
     border: 0 none;
     width: 686px;
-    margin: 0 auto;
-    /*margin-right: 10px;;*/
+
     display: none
 }
 #div-for-table-full-pymnt{
@@ -90,7 +90,7 @@ div .line{
     border: 0 none;
 }
 #div-alert-msg-MS,#div-alert-msg-F{
-
+    display: none;
     font-family: arial,serif,sans-serif;
     font-size: 13px;
 }
