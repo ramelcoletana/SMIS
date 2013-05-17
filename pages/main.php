@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../css/bootstrap.css" media="screen">
-    <link href="../css1/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
     <link rel='stylesheet' type='text/css' href='../themes/base/jquery.ui.all.css'/>
     <link type="text/css" rel="stylesheet" href="../css/style.css"/>
     <!--link type="text/css" rel="stylesheet" href="../css/payment.css"/-->
@@ -30,7 +30,7 @@
     <script src="../js/bootstrap-transition.js" type="text/javascript"></script>
     <script src="../js/DT_bootstrap.js" type="text/javascript"></script>
     <script src="../js/jquery.dataTables.js" type="text/javascript"></script>
-    <script src="../js/nav_tool_tip.js" type="text/javascript"></script>
+    <script src="../js/tool_tip.js" type="text/javascript"></script>
     <script src="../js/scripts.js" type="text/javascript"></script>
     <script src="../js/payment.js" type="text/javascript"></script>
     <script src="../js/file_upload.js" type="text/javascript"></script>
@@ -53,7 +53,9 @@
         <a class="brand" href="main.php"><img src='../images/smis2.png' /></a>
         <div class="nav-collapse container-fluid">
             <ul class="nav">
-                <li id="home"><a href="?page=home" target="_self" id="a_home" data-placement="bottom" data-toggle="tooltip" title="Welcome to home">Home</a></li>
+                <li id="home"><a href="?page=home" target="_self" id="a_home" data-placement="bottom" data-toggle="tooltip" title="Dashboard">Dashboard</a></li>
+                <li><a href="#" class="dropdown-toggle" data-target="#" data-toggle="dropdown" role="button">Teachers</a></li>
+                <li><a href="#" class="dropdown-toggle" data-target="#" data-toggle="dropdown" role="button">Students</a></li>
                 <li id="new-ass"><a href="?page=new-ass" id="a_new_ass" data-placement="bottom" data-toggle="tooltip" title="Create new assessment">New assessment</a></li>
                 <li id="pay"><a href="?page=pay" id="a_pay" data-placement="bottom" data-toggle="tooltip" title="Payment">Payment</a></li>
 
@@ -61,7 +63,7 @@
             <ul class="nav pull-right">
                 <li><a href="#">Logged in as <span id="user_full_name" class="label label-info"><?php echo $pic_name[0] ?> </span></a></li>
                 <li class='dropdown'>
-                    <a id="username" class="dropdown-toggle" href="#" data-target="#" data-toggle="dropdown" role="button"><img style="width: 20px; height: 20px; border-radius: 3px;" src=
+                    <a id="username" class="dropdown-toggle" href="#" data-target="#" data-placement="bottom" data-toggle="dropdown" role="button"><img style="width: 20px; height: 20px; border-radius: 3px;" src=
                     <?php
                          if(isset($pic_name[1])){
                              echo "../upload_pic/".$pic_name[1];
@@ -89,7 +91,7 @@
 <br>
 <br>
 <div class="container"><!-- main content -->
-<div class="thumbnail" style="border: 0 none;">
+<!--div class="thumbnail" style="border: 0 none;"-->
     <?php
         if(isset($_SESSION['success_msg'])){
             echo "<div class='alert alert-info' id='alert_success' style='text-align: center;height: 20px;'>".$_SESSION['success_msg']."</div>";
@@ -127,7 +129,7 @@
 
 
 
-</div></span>
+<!--/div-->
 </div>
 <!-- END main content -->
 

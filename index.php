@@ -10,7 +10,7 @@
             $login_password = $_POST['signin_password'];
             $exist = $login_user->login_user($login_username, $login_password);
             if($exist=="notexist"){
-                $err = "Invalid username or password. ".$login_password;
+                $err = "Invalid username or password. ";
                 $_SESSION['success_msg'] = "";
             }else{
                 $err = "";

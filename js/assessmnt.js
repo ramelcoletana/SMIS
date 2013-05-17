@@ -76,7 +76,7 @@ $(document).ready(function(){
         }
     });
     $('#photo_upload').live('change', function(){
-        $('#form_upload_pic').vPB({
+        $('#form_upload_pic').ramz({
             url: '../process/file_upload.php',
             beforeSubmit: function()
             {

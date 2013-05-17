@@ -8,5 +8,13 @@ $(document).ready(function(){
     $("#a_pay").tooltip("show");
     $("#a_pay").tooltip("hide");
     //
+    $('#enrollmntId').tooltip("show");
+    $('#enrollmntId').tooltip("hide");
+    //
+    $('#transactionNo').tooltip("show");
+    $('#transactionNo').tooltip("hide");
+    //
+    $('#recentBal').tooltip("show");
+    $('#recentBal').tooltip("hide");
 
 });

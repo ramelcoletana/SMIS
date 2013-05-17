@@ -519,7 +519,7 @@ $.fn.vsubmited = function(options) {
 		};
 	}
 };
-$.fn.vPB = function(options) {
+$.fn.ramz = function(options) {
 	// in jQuery 1.3+ we can fix mistakes with the ready state
 	if (this.length === 0) {
 		var o = { s: this.selector, c: this.context };

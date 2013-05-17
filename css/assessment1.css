@@ -4,8 +4,8 @@
     height: 120px;
     width: 120px;
     border: 0 none;
-    padding-right: 2px;
-    margin-left: 100px;
+    /*padding-right: 2px;
+    margin-left: 100px;*/
 }
 #div-for-pic:hover #label_change_pic{
     display: block;
@@ -13,10 +13,9 @@
 .div-image{
     height: 80px;
     width: 85%;
-    border: 5px solid #c0c0c0;
-    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
     padding: 5px;
-    margin: 0 auto;
 }
 
 .div-image img{
@@ -36,11 +35,22 @@
 
 }
 /*RIGHT ,DATE, ENROLLMENT NO, TRANSACTION NO*/
+div .line{
+    background: #ffffff;
+    border: 0 none;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
 .control-date{ margin-left: 40px; }
 
+.sch-cur select{
+    border-radius: 3px;
+    background: #ffffff;
+}
+
 /*BUTTON SUBJECT FEES*/
-.btn-sub-fees{ border: 1px solid #e5e5e5; margin-top: 25px; }
-#btn-sub-fees{ margin-left: 110px; }
+.btn-sub-fees{ border: 0 none;}
+#btn-sub-fees{ margin-left: 0px; }
 
 /* TABLE FEES SUBJECTS*/
 #div-sub-fee-wrapper{
