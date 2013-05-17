@@ -10,7 +10,7 @@
             $login_password = $_POST['signin_password'];
             $exist = $login_user->login_user($login_username, $login_password);
             if($exist=="notexist"){
-                $err = "Invalid username or password.";
+                $err = "Invalid username or password. ".$login_password;
                 $_SESSION['success_msg'] = "";
             }else{
                 $err = "";
@@ -113,9 +113,9 @@
     </script>
 </head>
 <body>
-<div class="navbar navbar-fixed-top">
-    <div class="navbar navbar-inner1" style="text-align: center;">
-        <h2>School Management and Information System</h2>
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar navbar-inner" style="text-align: center;">
+        <h2 style="color: #999999;">School Management and Information System</h2>
     </div>
 </div>
 <br>

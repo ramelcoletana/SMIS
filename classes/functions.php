@@ -3,7 +3,7 @@ include 'connection.php';
 class sqlfunction extends DB_Connect{
     /*LOGIN USERS*/
     function login_user($username,$password){
-        $sql1 = "SELECT flduserID,fldpassword,fldusertype FROM tbluseraccount WHERE flduserID='$username' AND fldpassword='$password'";
+        $sql1 = "SELECT flduserID,fldpassword,fldusertype FROM tbluseraccount WHERE flduserID='$username' AND fldpassword= '$password' ";
         $result1 = mysql_query($sql1,$this->openCon());
         $row = mysql_fetch_array($result1);
         if($row[0]=="" || $row[0]==null || $row[1]=="" || $row[1]==null){
@@ -14,11 +14,11 @@ class sqlfunction extends DB_Connect{
     }
 
     /*SHOW USER PIC*/
-    function show_user_pic($login_user,$login_password){
-        $sql = "SELECT fldProfile_Pic FROM tbluseraccount WHERE flduserID = '$login_user' AND fldpassword = '$login_password' ";
+    function show_user_pic_full_name($login_user,$login_password){
+        $sql = "SELECT fldfullName,fldProfile_Pic FROM tbluseraccount WHERE flduserID = '$login_user' AND fldpassword = '$login_password' ";
         $res = mysql_query($sql, $this->openCon());
-        $pic = mysql_fetch_array($res);
-        return $pic[0];
+        $pic_name = mysql_fetch_array($res);
+        return $pic_name;
     }
 
     //===========================================================================================================//

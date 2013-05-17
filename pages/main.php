@@ -4,7 +4,8 @@
     if(isset($_SESSION['login_user'])){
         //header("location: main.php");
         $get_pic = new sqlfunction();
-        $pic = $get_pic->show_user_pic($_SESSION['login_user'],$_SESSION['login_password']);
+        $pic_name = array();
+        $pic_name = $get_pic->show_user_pic_full_name($_SESSION['login_user'],$_SESSION['login_password']);
     }else{
         header("location: ../index.php");
     }
@@ -17,6 +18,7 @@
     <link type="text/css" rel="stylesheet" href="../css/bootstrap.css" media="screen">
     <link href="../css1/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
     <link rel='stylesheet' type='text/css' href='../themes/base/jquery.ui.all.css'/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
     <!--link type="text/css" rel="stylesheet" href="../css/payment.css"/-->
     <link type="text/css" rel="stylesheet" href="../css/assessment1.css"/>
 
@@ -48,8 +50,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="main.php">S<small>chool</small> M<small>anagement and</small> I<small>nformation</small> S<small>ystem</small></a>
-        <div class="nav-collapse">
+        <a class="brand" href="main.php"><img src='../images/smis2.png' /></a>
+        <div class="nav-collapse container-fluid">
             <ul class="nav">
                 <li id="home"><a href="?page=home" target="_self" id="a_home" data-placement="bottom" data-toggle="tooltip" title="Welcome to home">Home</a></li>
                 <li id="new-ass"><a href="?page=new-ass" id="a_new_ass" data-placement="bottom" data-toggle="tooltip" title="Create new assessment">New assessment</a></li>
@@ -57,11 +59,12 @@
 
             </ul>
             <ul class="nav pull-right">
+                <li><a href="#">Logged in as <span id="user_full_name" class="label label-info"><?php echo $pic_name[0] ?> </span></a></li>
                 <li class='dropdown'>
                     <a id="username" class="dropdown-toggle" href="#" data-target="#" data-toggle="dropdown" role="button"><img style="width: 20px; height: 20px; border-radius: 3px;" src=
                     <?php
-                         if(isset($pic)){
-                             echo "../upload_pic/".$pic;
+                         if(isset($pic_name[1])){
+                             echo "../upload_pic/".$pic_name[1];
                          }else{
                              echo "../images/avatar.gif";
                          }
