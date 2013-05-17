@@ -119,20 +119,23 @@
     </div>
 </div>
 <br>
+<?php
+if(isset($err)){
+    echo "<div class='alert alert-error container' style='margin-top: 15px; text-align: center;'><i class='icon-exclamation-sign'></i>&nbsp;&nbsp;$err
+            <button type='button' class='close' data-dismiss='alert'>&times;</button>
+        </div>";
+}else{
+    echo "";
+}
+?>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
 
 <div class="container"> <!-- sign in form -->
-    <?php
-    if(isset($err)){
-        echo "<div class='alert alert-error container' style='margin-top: 15px;'><i class='icon-exclamation-sign'></i>&nbsp;$err
-            <button type='button' class='close' data-dismiss='alert'>&times;</button>
-        </div>";
-    }else{
-        echo "";
-    }
-    ?>
      <form class="form-signin" method="POST" action="">
          <div class="auth-form-header"><h4>Sign in</h4></div>
          <div class="auth-form-body">

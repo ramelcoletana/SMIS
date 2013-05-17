@@ -4,7 +4,7 @@
     <list default="true" id="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" name="Default" comment="" />
     <ignored path="smis.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368681848360" ignored="false" />
+    <file path="/index.php" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368754518169" ignored="false" />
     <file path="/main.php" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368692822012" ignored="false" />
     <file path="/assessment.php" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368603031993" ignored="false" />
     <file path="/payment.php" changelist="4e2119d2-e31d-4026-9b8e-8c1d8c15929b" time="1368603594009" ignored="false" />
@@ -40,10 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="187" selection-start="3140" selection-end="3140" vertical-scroll-proportion="1.2871287">
+            <state line="60" column="187" selection-start="3140" selection-end="3140" vertical-scroll-proportion="-32.5">
               <folding />
             </state>
           </provider>
@@ -76,20 +76,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="39" selection-start="2594" selection-end="2621" vertical-scroll-proportion="0.0">
+            <state line="123" column="146" selection-start="4393" selection-end="4393" vertical-scroll-proportion="0.5693069">
               <folding>
-                <marker date="1368681893103" expanded="true" signature="4379:4396" placeholder="..." />
-                <marker date="1368681893103" expanded="true" signature="4397:4545" placeholder="..." />
-                <marker date="1368681893103" expanded="true" signature="4397:4459" placeholder="..." />
-                <marker date="1368681893103" expanded="true" signature="4397:4470" placeholder="..." />
-                <marker date="1368681893103" expanded="true" signature="4397:4477" placeholder="..." />
-                <marker date="1368681893103" expanded="true" signature="4397:4485" placeholder="..." />
-                <marker date="1368681893103" expanded="true" signature="4397:4491" placeholder="..." />
-                <marker date="1368681893103" expanded="true" signature="4397:4506" placeholder="..." />
-                <marker date="1368681893103" expanded="true" signature="4397:4512" placeholder="..." />
+                <marker date="1368754518318" expanded="true" signature="4305:4342" placeholder="..." />
+                <marker date="1368754518318" expanded="true" signature="4343:4497" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -160,7 +153,6 @@
         <option value="$PROJECT_DIR$/pages/payment.php" />
         <option value="$PROJECT_DIR$/process/logout.php" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/pages/assessment.php" />
         <option value="$PROJECT_DIR$/js/assessmnt.js" />
         <option value="$PROJECT_DIR$/css/assessment1.css" />
@@ -168,6 +160,7 @@
         <option value="$PROJECT_DIR$/js/nav_tool_tip.js" />
         <option value="$PROJECT_DIR$/classes/functions.php" />
         <option value="$PROJECT_DIR$/pages/main.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -253,13 +246,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="52" width="1440" height="823" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26258993" sideWeight="0.6704871" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26258993" sideWeight="0.6704871" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -335,19 +328,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/payment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="440" selection-end="440" vertical-scroll-proportion="0.2857143" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/file_upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/assessmnt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="486" column="54" selection-start="18652" selection-end="18652" vertical-scroll-proportion="0.53156143" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/payment.js">
@@ -363,23 +346,6 @@
     <entry file="file://$PROJECT_DIR$/process/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="33" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="39" selection-start="2594" selection-end="2621" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1368681893103" expanded="true" signature="4379:4396" placeholder="..." />
-            <marker date="1368681893103" expanded="true" signature="4397:4545" placeholder="..." />
-            <marker date="1368681893103" expanded="true" signature="4397:4459" placeholder="..." />
-            <marker date="1368681893103" expanded="true" signature="4397:4470" placeholder="..." />
-            <marker date="1368681893103" expanded="true" signature="4397:4477" placeholder="..." />
-            <marker date="1368681893103" expanded="true" signature="4397:4485" placeholder="..." />
-            <marker date="1368681893103" expanded="true" signature="4397:4491" placeholder="..." />
-            <marker date="1368681893103" expanded="true" signature="4397:4506" placeholder="..." />
-            <marker date="1368681893103" expanded="true" signature="4397:4512" placeholder="..." />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/assessment.php">
@@ -442,8 +408,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="187" selection-start="3140" selection-end="3140" vertical-scroll-proportion="1.2871287">
+        <state line="60" column="187" selection-start="3140" selection-end="3140" vertical-scroll-proportion="-32.5">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="146" selection-start="4393" selection-end="4393" vertical-scroll-proportion="0.5693069">
+          <folding>
+            <marker date="1368754518318" expanded="true" signature="4305:4342" placeholder="..." />
+            <marker date="1368754518318" expanded="true" signature="4343:4497" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
