@@ -59,7 +59,7 @@
             </ul>
             <ul class="nav pull-right">
                 <li><a href="#">Logged in as <span id="user_full_name" class="label"><?php echo $pic_name[0] ?> </span></a></li>
-                <li><a href="#" id="my_profile" data-placement="bottom" data-toggle="tooltip" title="My Profile"><i class="icon-user"></i></a></li>
+                <li><a href="?page=user_profile" id="my_profile" data-placement="bottom" data-toggle="tooltip" title="My Profile"><i class="icon-user"></i></a></li>
                 <li><a href="../process/logout.php" id="logout" data-placement="bottom" data-toggle="tooltip" title="Logout"><i class="icon-signout"></i></a></li>
                 <li>
                     <a><img style="width: 20px; height: 20px; border-radius: 3px;" src=
@@ -102,11 +102,16 @@
            <input type="hidden" class="current_page" value="new-ass"/>
     <?php
          include "assessment1.php";
-            }else{
+            }else if($_REQUEST['page']=="pay"){
     ?>
            <input type="hidden" class="current_page" value="pay"/>
     <?php
-         include "payment1.php";
+        include "payment1.php";
+            }else{
+    ?>
+            <input type="hidden" class="current_page" value="user_profile" />
+    <?php
+         include "user_profile.php";
             }
         }else{
     ?>
