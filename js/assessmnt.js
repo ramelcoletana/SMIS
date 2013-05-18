@@ -471,7 +471,6 @@ function searchStudent(studentId){
         url: '../process/searchStudent.php',
         data: obj,
         success: function(data){
-            alert(data);
             if(data==="not_reg"){
                 $('#div-overlay-alert-msg').html("<i class='icon-exclamation-sign'></i>&nbsp;&nbsp;STUDENT ID YOU'VE ENTERED IS NOT YET REGISTERED!");
                 $('#div-overlay-alert-msg').show('blind',1000);
@@ -1093,7 +1092,7 @@ function keyupCurrPayment(id,amount){
     	$('#balance'+id).html(balance);
         
         var obj = {"transactionNo": transactionNo,"enrollmentNo": enrollmentNo,"studentNo": studentNo,"assessmentName": assessmentName,"currentPayment": currentPayment,"balance": $('#balance'+id).html()};
-        
+
         $.ajax({
            type: 'POST',
            url: '../process/updateGetCurrentPayment.php',

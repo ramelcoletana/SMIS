@@ -1,25 +1,26 @@
 <?php
 ?>
 <div class="container" style="border: 0 none"><!-- wrapper -->
-<div class="row-fluid" style="border: 0 none;">
+<div class="row-fluid" style="border: 10px solid #e5e5e5;border-radius: 10px; padding: 0px 10px 20px 35px;">
     <div class="alert alert-error" id="div-overlay-alert-msg"></div><!-- end div-overlay-alert-msg -->
     <div id="div-alert-success" class="alert alert-success"></div>
 
     <div class="container">
     <div style="border: 1px solid #e5e5e5; padding: 20px 20px 20px 35px;">
-    <div class="row">
+    <div class="row"><!-- row 1 -->
         <div class="span12">
             <ul class="pull-right">
                 <span id='span-date' title='(Month/Date/Year)' class="label label-info"></span>&nbsp;
                 <span id="span-time" class="label label-info"></span>
             </ul>
-            <div class="input-append">
-                <input class="span3" type="text" id='searchStudId' placeholder="Enter student ID No.">
+            <div class="input-prepend input-append">
+                <span class="add-on"><i class="icon-search"></i></span>
+                <input class="span3" type="text" id='searchStudId' placeholder="Enter student ID No." autocomplete="off" role="textbox">
                 <button class="btn" id='btn-search-stud' type="button">Go!</button>
             </div>
         </div>
-    </div>
-    <div class="row">
+    </div><!-- END row 1 -->
+    <div class="row"><!-- row 2 -->
         <div class="span12" style="border: 0 none"> <!-- student info -->
             <fieldset>
                 <legend>Personal Info</legend>
@@ -59,10 +60,10 @@
             </fieldset>
         </div>
         <!-- END student info -->
-    </div>
+    </div><!-- END row 2 -->
 
 
-    <div class="row">
+    <div class="row"><!-- row 3 -->
         <div class="span12" style="0 none;"> <!-- left department -->
             <fieldset>
                 <legend>Department</legend>
@@ -77,7 +78,11 @@
                     </label>
                 </form>
             </fieldset>
-
+        </div>
+        <!-- END left, department -->
+    </div><!-- END row 3 -->
+    <div class="row"> <!-- row 4 -->
+        <div class="span6">
             <div class="form-horizontal sch-cur" style="border: 0 none;">
                 <div class="control-group">
                     <label class="control-label"><strong>AGE</strong></label>
@@ -112,6 +117,10 @@
                         </select>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="span6">
+            <div class="form-horizontal sch-cur" style="border: 0 none;">
                 <div class="control-group">
                     <label class="control-label"><strong>YEAR LVL.</strong></label>
                     <div class="controls">
@@ -129,17 +138,14 @@
                         <input type='text' name='genAverage' id='genAverage' />
                     </div>
                 </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button id='btn-sub-fees' class='btn btn-medium btn-primary'>SUBJECT | FEES</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- END left, department -->
-    </div>
-
-    <div class="row">
-        <div class="span12 btn-sub-fees">
-            <button id='btn-sub-fees' class='btn btn-large btn-primary'>SUBJECT | FEES</button>
-        </div>
-        <!-- end btn-sub-fees -->
-    </div>
+    </div><!-- END row 4 -->
 
     <!-- END row for right, -->
     <div class="row"> <!-- row, mode of payment, category -->
@@ -301,7 +307,7 @@
         <div id="div-btn-done-cancel">
             <button id='btn-done-assmnt' class='btn btn-small btn-primary'>DONE</button>
             <button id='btn-cancel-assmnt' class='btn btn-small btn-default'>CANCEL</button>
-            <button id='btn-reset-all-assmnt' class='btn btn-small btn-warning'>RESET?</button>
+            <button id='btn-reset-all-assmnt' class='btn btn-small btn-danger'>RESET?</button>
         </div><!-- end div-btn-done-cancel -->
     </div>
     </div>

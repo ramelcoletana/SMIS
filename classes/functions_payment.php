@@ -35,7 +35,6 @@ include "connection.php";
             //
             $enrolled = true;
             $sql2 = "SELECT fld_Enrollment_Id, fld_Grade_Year_Level FROM tblenrolldata WHERE fldId = $id AND fld_Student_Num = '$student_id'";
-            echo $sql2;
             $result2 = mysql_query($sql2,$con);
             $row2 = mysql_fetch_array($result2);
             if($row2[0] == "" || $row2[1] == null){
@@ -109,10 +108,11 @@ include "connection.php";
 	                echo "<td><span id=advanceP".$row2[0].">0</span><input type=hidden id=assNum value=".$row2[9]." />
 			    <input type=hidden id=assOrigAmnt".$row2[0]." value=".$row2[5]." /></td>";
 	                echo "</tr>";
-			
-			$sqlInN = "INSERT INTO tblnextAssessment (fldTransactionNo,fldEnrollmentNo,fldStudentNo,fldAssessmentName,
+
+            $nAN = $assNo + 1;
+			$sqlInN = "INSERT INTO tblnextassessment (fldTransactionNo,fldEnrollmentNo,fldStudentNo,fldAssessmentName,
 			fldOriginalAmount,fldOriginalBalance,fldAssessmentAmount,fldAdvancedPayment,fldAssessmentNo)
-			VALUES ('$transNo','$enrollNo','$studentNo','$assName',$assOrigAmnt,$assOrigBal,$assAmount,$assAdvance,$assNo + 1)";
+			VALUES ('$transNo','$enrollNo','$studentNo','$assName',$assOrigAmnt,$assOrigBal,$assAmount,$assAdvance,$nAN)";
 			mysql_query($sqlInN, $con);
 			$notFound = false;
 		    }
@@ -161,7 +161,7 @@ include "connection.php";
 			$sqlUA = "UPDATE tblassissment SET fldAssessmentPaid = $assPaid, fldBalance = $assOrigBal, 
 			fldAssessmentCounter = $curAssNo WHERE fldEnrollmentNo = '$enrollmentNo' AND fldStudentNum = '$studentNo' 
 			AND fldAssessmentName = '$assName' ";
-			//echo $sqlUA;
+			echo $sqlUA;
 			mysql_query($sqlUA, $con);
 
 		}
@@ -172,9 +172,8 @@ include "connection.php";
 		mysql_query($sqlIPCF, $con);
 
 		$nAN = $curAssNo + 1;
-		$sqlDel = "DELETE FROM tblnextAssessment WHERE fldEnrollmentNo = '$enrollmentNo'
+		$sqlDel = "DELETE FROM tblnextassessment WHERE fldEnrollmentNo = '$enrollmentNo'
 		AND fldStudentNo = '$studentNo' AND fldAssessmentNo != $nAN";
-		echo $sqlDel;
 		mysql_query($sqlDel, $con);
 	}
 
@@ -187,11 +186,11 @@ include "connection.php";
 
 	//CANCEL CURRENT ASSESSMENT
 	function p_cancelAssPayment($enrollmentNo, $studentNo, $curAssNo, $nextAssNo){
-	    $sqlDCA = "DELETE FROM tblallAssessment WHERE fldEnrollmentNo = '$enrollmentNo' AND fldStudentNo = '$studentNo'
+	    $sqlDCA = "DELETE FROM tblallassessment WHERE fldEnrollmentNo = '$enrollmentNo' AND fldStudentNo = '$studentNo'
 		AND fldAssessmentNo = $curAssNo";
 	    mysql_query($sqlDCA, $this->openCon());
 	    
-	    $sqlDNA = "DELETE FROM tblnextAssessment WHERE fldEnrollmentNo = '$enrollmentNo' AND fldStudentNo = '$studentNo'
+	    $sqlDNA = "DELETE FROM tblnextassessment WHERE fldEnrollmentNo = '$enrollmentNo' AND fldStudentNo = '$studentNo'
 		AND fldAssessmentNo = $nextAssNo";
 	    mysql_query($sqlDNA,$this->openCon());
 	}

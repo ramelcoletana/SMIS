@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('#btn_ass_payment_done').removeAttr('disabled');
+    $('#amount_ten').attr('disabled','disabled');
+    $('#btn_ass_payment_done').attr('disabled','disabled');
     $('#btn_ass_payment_cancel').removeAttr('disabled');
     $('#btn_new_AS').attr('disabled','disabled');
     $('#btn_p_search_stud').removeAttr('disabled');
@@ -9,11 +10,10 @@ $(document).ready(function(){
     p_setTransactionNo();
     //SEARCH STUDENT FOR ASSESSMENT
     $('#amount_ten').keyup(function(){
-    computeChange(); 
+    computeChange();
     });
     $('#btn_p_search_stud').click(function(){
         p_searchStudent();
-        $(this).attr('disabled', 'disabled');
     });
 
     //done payment of assessment
@@ -50,34 +50,37 @@ function p_setTransactionNo(){
     });
 }
 //GET TRANSACTION NO
-function getTransactionNo(){
+function p_getTransactionNo(){
     return $('#transactionNo').val();
 }
 //GET STUDENT ID
-function getStudentId(){
+function p_getStudentId(){
     return $('#p_student_search').val();
 }
-function getEnrollmentNo(){
+function p_getEnrollmentNo(){
     return $('#enrollment_no').val();
 }
 //SEARCH STUDENT
 function p_searchStudent(){
-    var studentId = getStudentId();
-    console.log(studentId);
-    
+    var studentId = p_getStudentId();
     var obj = {"p_studentId": studentId};
     $.ajax({
         type: 'POST',
         url: '../process/p_searchStudent.php',
         data: obj,
         success: function(data){
-            alert(data);
             if(data==="notEnrolled"){
                 //alert("This student id is not enrolled.");
 		        $('#btn_p_search_stud').removeAttr('disabled');
                 $('#tbody_for_tbl_assessment').html("<tr id='noAss'><td colspan=5>No assessment found!!!!</td></tr>");
                 $('#t_amount_ass').val(0);
+                $('#btn_p_search_stud').removeAttr('disabled');
             }else{
+                $('#btn_p_search_stud').attr('disabled','disabled');
+                $("#tbl_for_assessment tbody tr td input[type='text']").removeAttr('disabled');
+                $('#amount_ten').removeAttr('disabled');
+                $('#btn_ass_payment_done').removeAttr('disabled');
+
                 var objStudData = JSON.parse(data);
                 var studentId = objStudData.studentNo;
                 var studentName = objStudData.studentName;
@@ -95,7 +98,6 @@ function p_searchStudent(){
                     url: '../process/p_getCurrentAssessment.php',
                     data: obj2,
                     success: function(data){
-			        console.log(data);
                         document.getElementById('tbody_for_tbl_assessment').innerHTML=data;
                         //SET MODE OF PAYMENT
                         var tbody = document.getElementById('tbody_for_tbl_assessment');
@@ -257,6 +259,7 @@ function computeChange(){
     }else{
         change = 0;
     }
+    console.log(change);
     $('#change').val(parseFloat(change));
 }
 
@@ -264,17 +267,25 @@ function computeChange(){
 function doneAssPayment(){
     var d = new Date;
     var today = d.getMonth() +"/"+d.getDate()+"/"+d.getFullYear();
-    var transactionNo = getTransactionNo();
-    var enrollmentNo = getEnrollmentNo();
-    var studentNo = getStudentId();
+    var transactionNo = p_getTransactionNo();
+    var enrollmentNo = p_getEnrollmentNo();
+    var studentNo = p_getStudentId();
     var totalCP = $('#t_current_pymnt').val();
     var amountT = $('#amount_ten').val();
     var curAssNo = $('#assessment_no').html();
+    if(amountT == "" || amountT == null || amountT == NaN){
+        amountT = 0;
+    }
+    if(totalCP == "" || totalCP == null || totalCP == NaN){
+        totalCP = 0;
+    }
     if(transactionNo === "" || transactionNo === null || enrollmentNo === "" || enrollmentNo === null
     || studentNo === "" || studentNo === null){
         alert("OPZ!!!INVALID ASSESSMENT...");
     }else if(parseFloat(amountT) < parseFloat(curAssNo)){
         alert("The system found out that the amount tendered is less than the total curent payment!! Change the amount tendered!!");
+    }else if(totalCP < 1 || totalCP == "" || totalCP == null || totalCP == NaN){
+        alert("Don't forget to pay your assessment.");
     }else{
         var obj = {"transactionNo": transactionNo, "enrollmentNo": enrollmentNo, "studentNo": studentNo, 
         "totalCP": totalCP, "amountT": amountT, "curAssNo": curAssNo, "today": today};
@@ -314,17 +325,10 @@ function doneAssPayment(){
             $('#btn_ass_payment_cancel').attr('disabled','disabled');
             $('#btn_new_AS').removeAttr('disabled');
             $('#btn_ass_payment_done').attr('disabled','disabled');
-            //$('#p_student_search').val("");
-            //$('#student_id').val("");
-           // $('#student_name').val("");
-            //$('#enrollment_no').val("");
-            //$('#grade_year_level').val("");
-            //$('#assessment_no').html("");
-           // $('#mode_of_payment').val("");
-            //$('#t_amount_ass').val("");
-            //$('#t_current_pymnt').val("");
-            //$('#amount_ten').val("");
-            //$('#change').val("");
+
+            $("#tbl_for_assessment tbody tr td input[type='text']").attr('disabled','disabled');
+            $('#amount_ten').attr('disabled','disabled');
+            $('#btn_ass_payment_done').attr('disabled','disabled');
         }
     }
 }
@@ -363,7 +367,7 @@ function resetData(){
     $('#enrollment_no').val("");
     $('#grade_year_level').val("");
     $('#assessment_no').html("");
-    $('#mode_of_payment').val("");
+    $('#mode_of_payment').html("");
     $('#t_amount_ass').val("");
     $('#t_current_pymnt').val("");
     $('#amount_ten').val("");

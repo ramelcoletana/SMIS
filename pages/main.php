@@ -19,7 +19,7 @@
     <link href="../css/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
     <link rel='stylesheet' type='text/css' href='../themes/base/jquery.ui.all.css'/>
     <link type="text/css" rel="stylesheet" href="../css/style.css"/>
-    <!--link type="text/css" rel="stylesheet" href="../css/payment.css"/-->
+    <link type="text/css" rel="stylesheet" href="../css/payment1.css"/>
     <link type="text/css" rel="stylesheet" href="../css/assessment1.css"/>
 
     <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
@@ -62,7 +62,7 @@
                 <li><a href="#" id="my_profile" data-placement="bottom" data-toggle="tooltip" title="My Profile"><i class="icon-user"></i></a></li>
                 <li><a href="../process/logout.php" id="logout" data-placement="bottom" data-toggle="tooltip" title="Logout"><i class="icon-signout"></i></a></li>
                 <li>
-                    <a id="username" href="#" ><img style="width: 20px; height: 20px; border-radius: 3px;" src=
+                    <a><img style="width: 20px; height: 20px; border-radius: 3px;" src=
                     <?php
                          if(isset($pic_name[1])){
                              echo "../upload_pic/".$pic_name[1];
@@ -70,7 +70,7 @@
                              echo "../images/avatar.gif";
                          }
                     ?>
-                    />
+                    /></a>
                 </li>
             </ul>
         </div>

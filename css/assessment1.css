@@ -41,6 +41,9 @@ div .line{
     border-bottom: 1px solid #e5e5e5;
     text-align: center;
 }
+div .minus-width{
+    width: 140px;
+}
 .control-date{ margin-left: 40px; }
 
 .sch-cur select{
@@ -107,11 +110,11 @@ div .line{
     border: 0 none;
 }
 .table thead tr{
-    background-color: #6C8393;
+    /*background-color: #6C8393;
     background-image: linear-gradient(#7F95A5, #6C8393);
     border-radius: 4px 4px 0 0;
     color: #ffffff;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);*/
 }
 .table th,.table td{
     text-align: center;
