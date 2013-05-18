@@ -4,9 +4,6 @@
 <div class="row-fluid" style="border: 0 none;">
     <div class="alert alert-error" id="div-overlay-alert-msg"></div><!-- end div-overlay-alert-msg -->
     <div id="div-alert-success" class="alert alert-success"></div>
-    <!--div id='div-search' class="form-search" style="margin-left: 120px;"-->
-
-    <!--/div-->
 
     <div class="container">
     <div style="border: 1px solid #e5e5e5; padding: 20px 20px 20px 35px;">
@@ -17,7 +14,7 @@
                 <span id="span-time" class="label label-info"></span>
             </ul>
             <div class="input-append">
-                <input class="span3" type="text" id='searchStudId' placeholder="Enter student ID No." required>
+                <input class="span3" type="text" id='searchStudId' placeholder="Enter student ID No.">
                 <button class="btn" id='btn-search-stud' type="button">Go!</button>
             </div>
         </div>

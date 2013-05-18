@@ -86,8 +86,12 @@ class sqlfunction extends DB_Connect{
         $sql = "SELECT max(fldId) FROM tblenrolldata WHERE fld_Student_Num = '$studentId' ";
         $res1 = mysql_query($sql, $con);
         $rw = mysql_fetch_array($res1);
-        $sql = "SELECT fld_Grade_Year_Level FROM tblenrolldata WHERE fldId = $rw[0] AND fld_Student_Num = '$studentId'";
-        $res2 = mysql_query($sql,$con);
+        $id = $rw[0];
+        if($id == "" || $id == null){
+            $id = "''";
+        }
+        $sqlS = "SELECT fld_Grade_Year_Level FROM tblenrolldata WHERE fldId = $id AND fld_Student_Num = '$studentId'";
+        $res2 = mysql_query($sqlS, $con);
         $rww = mysql_fetch_array($res2);
         $gyl = $rww[0];
 		if($row[0]=="" || $row[0]==null){

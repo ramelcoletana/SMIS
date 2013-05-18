@@ -54,16 +54,16 @@
         <div class="nav-collapse container-fluid">
             <ul class="nav">
                 <li id="home"><a href="?page=home" target="_self" id="a_home" data-placement="bottom" data-toggle="tooltip" title="Dashboard">Dashboard</a></li>
-                <li><a href="#" class="dropdown-toggle" data-target="#" data-toggle="dropdown" role="button">Teachers</a></li>
-                <li><a href="#" class="dropdown-toggle" data-target="#" data-toggle="dropdown" role="button">Students</a></li>
                 <li id="new-ass"><a href="?page=new-ass" id="a_new_ass" data-placement="bottom" data-toggle="tooltip" title="Create new assessment">New assessment</a></li>
                 <li id="pay"><a href="?page=pay" id="a_pay" data-placement="bottom" data-toggle="tooltip" title="Payment">Payment</a></li>
 
             </ul>
             <ul class="nav pull-right">
-                <li><a href="#">Logged in as <span id="user_full_name" class="label label-info"><?php echo $pic_name[0] ?> </span></a></li>
-                <li class='dropdown'>
-                    <a id="username" class="dropdown-toggle" href="#" data-target="#" data-placement="bottom" data-toggle="dropdown" role="button"><img style="width: 20px; height: 20px; border-radius: 3px;" src=
+                <li><a href="#">Logged in as <span id="user_full_name" class="label"><?php echo $pic_name[0] ?> </span></a></li>
+                <li><a href="#" id="my_profile" data-placement="bottom" data-toggle="tooltip" title="My Profile"><i class="icon-user"></i></a></li>
+                <li><a href="../process/logout.php" id="logout" data-placement="bottom" data-toggle="tooltip" title="Logout"><i class="icon-signout"></i></a></li>
+                <li>
+                    <a id="username" href="#" ><img style="width: 20px; height: 20px; border-radius: 3px;" src=
                     <?php
                          if(isset($pic_name[1])){
                              echo "../upload_pic/".$pic_name[1];
@@ -72,13 +72,6 @@
                          }
                     ?>
                     />
-                        <b class='caret'></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><i class="icon-user"></i>Profile</a></li>
-                        <div class="divider"></div>
-                        <li><a href="../process/logout.php" id="logout"><i class="icon-signout"></i>Logout</a></li>
-                    </ul>
                 </li>
             </ul>
         </div>

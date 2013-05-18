@@ -471,7 +471,7 @@ function searchStudent(studentId){
         url: '../process/searchStudent.php',
         data: obj,
         success: function(data){
-            
+            alert(data);
             if(data==="not_reg"){
                 $('#div-overlay-alert-msg').html("<i class='icon-exclamation-sign'></i>&nbsp;&nbsp;STUDENT ID YOU'VE ENTERED IS NOT YET REGISTERED!");
                 $('#div-overlay-alert-msg').show('blind',1000);
