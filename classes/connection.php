@@ -4,16 +4,16 @@ class DB_Connect{
 	protected $con;
 	
 	/*Formatted computers*/
-	/*private $db_name = "atissmis_group4";
+	private $db_name = "atissmis_group4";
 	private $db_user = "student1";
 	private $db_password = "password";
-	private $db_host = "student1.e2ps";*/
+	private $db_host = "student1.e2ps";
 
 	/*Unreformat computer*/
-	private $db_name = "atissmis_group4";
+	/*private $db_name = "atissmis_group4";
 	private $db_user = "root";
 	private $db_password = "";
-	private $db_host = "localhost";
+	private $db_host = "localhost";*/
 	
 	//connection to the database
 	function openCon(){
