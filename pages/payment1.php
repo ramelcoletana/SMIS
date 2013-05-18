@@ -81,8 +81,6 @@
             			</tbody>
         			</table><!-- END tbl_for_assessment -->
     			</fieldset>
-
-    		</div>
     	</div><!-- END row 4 -->
         <div class="row"> <!-- row 5 -->
             <div class="span6" style="text-align: center;">
