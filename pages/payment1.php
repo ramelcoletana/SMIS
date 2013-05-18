@@ -98,7 +98,12 @@
             			</tbody>
         			</table><!-- END tbl_for_assessment -->
     			</fieldset>
-    		</div>
+    			<div class="span6">
+dfdfdf
+    			</div>
+    			<div  class="span6">
+dfdfd
+    			</div>
     	</div><!-- END row 4 -->
     	</div>
 	</div>
