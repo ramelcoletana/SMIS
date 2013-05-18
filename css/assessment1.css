@@ -160,7 +160,7 @@ div .line{
 }
 
 /*table zebra stripe*/
-.even{
+/*.even{
     background-color: #fff;
 }
 .even:hover{
@@ -177,9 +177,6 @@ div .line{
 .odd{
     background-color: #e5e5e5;
 }
-.odd:hover{
-    background-color:  rgba(0,255,255,.2);
-}
 .odd td input[type=text]{
     background-color: #e5e5e5;
     border: 0 none;
@@ -187,7 +184,7 @@ div .line{
     height: 20px;
     font-family: monospace,arial,serif,sans-serif;
     text-align: center;
-}
+}*/
 
 /*DIALOG-CONFIRM*/
 #dialog-confirm-done-MS-assessment{

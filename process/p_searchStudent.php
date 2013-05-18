@@ -1,6 +1,6 @@
 <?php
 include "../classes/functions_payment.php";
-    $student_id = $_POST['studentId'];
+    $student_id = $_POST['p_studentId'];
 	$_SESSION['student_id'] = $student_id;
     
     $search = new payment();

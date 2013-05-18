@@ -6,13 +6,13 @@ $(document).ready(function(){
     $('#btn_new_AS').click(function(){
 	   newPaymentAss();
     });
-    setTransactionNo();
+    p_setTransactionNo();
     //SEARCH STUDENT FOR ASSESSMENT
     $('#amount_ten').keyup(function(){
     computeChange(); 
     });
     $('#btn_p_search_stud').click(function(){
-        searchStudent();
+        p_searchStudent();
         $(this).attr('disabled', 'disabled');
     });
 
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 //=================================================F U N C T I O N S====================================================//
 //SET TRANSACTION NO
-function setTransactionNo(){
+function p_setTransactionNo(){
     var year = new Date;
     var curYear = year.getFullYear();
     var nextYear = curYear + 1;
@@ -42,7 +42,7 @@ function setTransactionNo(){
         type: 'POST',
         url: '../process/p_setTransaction.php',
         success: function(data){
-            $('#transactionNo').val(tnformat+data);
+            $('#p_transactionNo').val(tnformat+data);
         },
         error: function(data){
             console.log("error in p_setTransactionNo.php => "+data);
@@ -61,17 +61,17 @@ function getEnrollmentNo(){
     return $('#enrollment_no').val();
 }
 //SEARCH STUDENT
-function searchStudent(){
-    alert("dfdfd");
+function p_searchStudent(){
     var studentId = getStudentId();
     console.log(studentId);
     
-    var obj = {"studentId": studentId};
+    var obj = {"p_studentId": studentId};
     $.ajax({
         type: 'POST',
         url: '../process/p_searchStudent.php',
         data: obj,
         success: function(data){
+            alert(data);
             if(data==="notEnrolled"){
                 //alert("This student id is not enrolled.");
 		        $('#btn_p_search_stud').removeAttr('disabled');
@@ -95,7 +95,7 @@ function searchStudent(){
                     url: '../process/p_getCurrentAssessment.php',
                     data: obj2,
                     success: function(data){
-			        //console.log(data);
+			        console.log(data);
                         document.getElementById('tbody_for_tbl_assessment').innerHTML=data;
                         //SET MODE OF PAYMENT
                         var tbody = document.getElementById('tbody_for_tbl_assessment');

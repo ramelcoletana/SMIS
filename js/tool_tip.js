@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    /*CREATE ASSESSMENT*/
     $("#a_home").tooltip("show");
     $("#a_home").tooltip("hide");
     //
@@ -23,4 +24,7 @@ $(document).ready(function(){
     $('#recentBal').tooltip("show");
     $('#recentBal').tooltip("hide");
 
+    /*PAYMENT*/
+    $('#p-span-date').tooltip("show");
+    $('#p-span-date').tooltip("hide");
 });

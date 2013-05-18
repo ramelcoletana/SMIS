@@ -109,7 +109,7 @@ include "connection.php";
 			$notFound = false;
 		    }
 		    if($notFound){
-			echo "<tr><td>No assessment found!!!!</td></tr>";
+			echo "<tr><td colspan=5>No assessment found!!!!</td></tr>";
 		    }
 		    
 		    

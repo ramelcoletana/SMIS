@@ -20,6 +20,13 @@ include "connection.php";
         function p_search_student($student_id){
             $con = $this->openCon();
             //
+            $sql = "SELECT max(fldId) FROM tblenrolldata WHERE fld_Student_Num = '$student_id'";
+            $res = mysql_query($sql, $con);
+            $row = mysql_fetch_array($res);
+            $id = $row[0];
+            if($id == "" || $id == null){
+            	$id = "''";
+            }
             $sql1 = "SELECT fldStudent_No,fldStud_FirstName, fldStud_MiddleName, fldStud_LastName FROM tblstudentrecord WHERE fldStudent_No='$student_id' AND fldStudent_Status='enrolled'";
             $result1 = mysql_query($sql1,$con);
             $row1 = mysql_fetch_array($result1);
@@ -27,7 +34,8 @@ include "connection.php";
             //echo $row1[0]." ".$row1[1]." ".$row1[2];
             //
             $enrolled = true;
-            $sql2 = "SELECT fld_Enrollment_Id, fld_Grade_Year_Level FROM tblenrolldata WHERE fld_Student_Num = '$student_id'";
+            $sql2 = "SELECT fld_Enrollment_Id, fld_Grade_Year_Level FROM tblenrolldata WHERE fldId = $id AND fld_Student_Num = '$student_id'";
+            echo $sql2;
             $result2 = mysql_query($sql2,$con);
             $row2 = mysql_fetch_array($result2);
             if($row2[0] == "" || $row2[1] == null){
@@ -109,7 +117,7 @@ include "connection.php";
 			$notFound = false;
 		    }
 		    if($notFound){
-			echo "<tr><td>No assessment found!!!!</td></tr>";
+			echo "<tr id='noAss><td colspan=5>No assessment found!!!!</td></tr>";
 		    }
 		    
 		    

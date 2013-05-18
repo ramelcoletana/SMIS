@@ -2,7 +2,7 @@
 	include '../classes/functions.php';
 
 	$category = $_POST['category'];
-	$studentId = $_POST['studentId'];
+	$studentId = $_POST['studentId_FM'];
 	$enrollNo = $_POST['enrollNo'];
 	$transactionNo = $_POST['transactionNo'];
 	$paymentMode = $_POST['paymentMode'];

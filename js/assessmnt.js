@@ -1005,7 +1005,7 @@ function showFeesForMSPymnt(){
     var transactionNo = getTransactionNo();
     var paymentMode = $('input[name=radioPaymnt]:checked').val();
     var obj;
-    obj = {'category':category,'studentId':studentId,'enrollNo':enrollNo,'transactionNo':transactionNo,'paymentMode':paymentMode};
+    obj = {'category':category,'studentId_FM':studentId,'enrollNo':enrollNo,'transactionNo':transactionNo,'paymentMode':paymentMode};
     $.ajax({
         type: 'POST',
         url: '../process/showFeesMonthlyPayment.php',

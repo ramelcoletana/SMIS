@@ -28,13 +28,12 @@
 
     <script src="../js/bootstrap-tab.js" type="text/javascript"></script>
     <script src="../js/bootstrap-transition.js" type="text/javascript"></script>
-    <script src="../js/DT_bootstrap.js" type="text/javascript"></script>
     <script src="../js/jquery.dataTables.js" type="text/javascript"></script>
     <script src="../js/tool_tip.js" type="text/javascript"></script>
     <script src="../js/scripts.js" type="text/javascript"></script>
-    <script src="../js/payment.js" type="text/javascript"></script>
     <script src="../js/file_upload.js" type="text/javascript"></script>
     <script src="../js/assessmnt.js" type="text/javascript"></script>
+    <script src="../js/payment.js" type="text/javascript"></script>
 
     <link rel="icon" href='../images/sms.ico'/>
     <title>S M I S</title>
@@ -107,7 +106,7 @@
     ?>
            <input type="hidden" class="current_page" value="pay"/>
     <?php
-         include "payment.php";
+         include "payment1.php";
             }
         }else{
     ?>
