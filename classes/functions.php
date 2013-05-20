@@ -473,4 +473,16 @@ class sqlfunction extends DB_Connect{
         $this->closeCon();
        
     }
+
+    /*uSER PROFILE*/
+    function show_user_profile($data){
+        $con = $this->openCon();
+        $sql = "SELECT fldEmail,fldfullName,fldGender,fldAge,fldBdate,fldProfile_Pic FROM tbluseraccount WHERE flduserID = '$data[0]' AND fldpassword = '$data[1]' ";
+        $res = mysql_query($sql, $con);
+        $row = mysql_fetch_array($res);
+        $json_data = array('email'=>$row[0],'name'=>$row[1],'gender'=>$row[2],'age'=>$row[3],'bdate'=>$row[4],'profilepic'=>$row[5]);
+        $json_string = json_encode($json_data);
+        echo $json_string;
+
+    }
 }

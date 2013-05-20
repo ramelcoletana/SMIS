@@ -1,0 +1,19 @@
+.profile_img_holder{
+    float: left;
+    height: 60px;
+    margin-right: 20px;
+    width: 60px;
+}
+.profile_img_holder img{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    height: 60px;
+    padding: 1px;
+    width: 60px;
+}
+img{
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
